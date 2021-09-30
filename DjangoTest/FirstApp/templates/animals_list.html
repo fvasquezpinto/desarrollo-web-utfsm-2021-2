@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% for animal in animals_list %}
+        <p>{{animal.name}}</p>
+        <p>{{animal.weight}}</p>
+        <br>
+    {% endfor %}
+    <br>
+    <p>Y el context es: "{{my_var}}"</p>
+    <br>
+    ----
+    <!-- creamos una URL usando el "name" que se le dió a un path en urls.py -->
+    <p><a href="{% url 'review_animals' %}">URL a review_animals</a></p>
+{% endblock %}

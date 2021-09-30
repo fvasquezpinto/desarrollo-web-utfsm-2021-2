@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% for animal in animals %}
+        <p>{{animal.name}}</p>
+        <p>{{animal.weight}}</p>
+        <br>
+    {% endfor %}
+{% endblock %}

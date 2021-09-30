@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <p>Animal created!</p>
+    <p>Animal name: {{name}}</p>
+    <p>Animal weight: {{weight}}</p>
+    <br>
+    <p><a href="{% url 'create_cat' %}">Crear un gatito</a></p>
+    <p><a href="{% url 'review_animals' %}">Ver animales creados</a></p>
+{% endblock %}
